@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom'
+import { createHashRouter } from 'react-router-dom'
 import About from '@/pages/About'
 import ArticleDetail from '@/pages/ArticleDetail'
 import Articles from '@/pages/Articles'
@@ -9,7 +9,7 @@ import Home from '@/pages/Home'
 import NotFound from '@/pages/NotFound'
 import Write from '@/pages/Write'
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
     {
         path: '/',
         element: (

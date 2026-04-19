@@ -7,6 +7,7 @@ export default defineConfig(({ mode }) => {
   const target = env.DEV_API_TARGET
 
   return {
+    base: mode === 'production' ? '/blue-hour-blog/' : '/',
     plugins: [react()],
     resolve: {
       alias: {
